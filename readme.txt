@@ -3,7 +3,7 @@ Contributors: FolioVision
 Donate link: http://foliovision.com/seo-tools/wordpress/plugins/fv-top-level-categories
 Tags: categories, permalink
 Requires at least: 3.2.1
-Tested up to: 3.3.1
+Tested up to: 3.4.1
 Stable tag: trunk
 
 This is a fix of Top Level Categories plugin for Wordpress 3.1. and above.
@@ -30,10 +30,6 @@ This plugin works also if you have a permalink structure like %postname% or %cat
 
 == Frequently Asked Questions ==
 
-= I get not found/404 errors on my posts/category URLs! =
-
-Just visit Settings --> Permalinks to refresh the rewrite rules and the issues should disappear.
-
 = How do I automatically redirect people from the old category permalink? =
 
 We recommend that you use the [Redirection](http://wordpress.org/extend/plugins/redirection/) plugin and add your old an new category links, or use a Regex redirection rule. Make sure you change Tools -> Redirection -> Options -> URL Monitoring to "Don't monitor", as there is a [bug](http://wordpress.org/support/topic/plugin-redirection-my-homepage-is-being-redirected-to-a-page-need-some-help) in that feature (also in latest current version 2.2.5) - not related to FV Top Level Categories.
@@ -48,6 +44,9 @@ Make sure your categories have unique slugs - watch out for pages with the same 
 1. That's it! :)
 
 == Changelog ==
+
+= 1.4 =
+* fix for Wordpress 3.4.1 - category prefix was part of the generated URLs
 
 = 1.3 =
 * for for flushing of rewrite rules on plugin activation in WP 3.3
